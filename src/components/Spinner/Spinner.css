@@ -1,0 +1,10 @@
+.Backdrop {
+  position: absolute !important;
+  height: 100% !important;
+  width: 100% !important;
+  color: #ffffff;
+  background-color: #2e416a;
+  z-index: 10000 !important;
+  left: 0 !important;
+  top: 0 !important;
+}
