@@ -1,4 +1,10 @@
 {
-  "title": "Titlul nu este disponibil.",
-  "description": "Descrierea nu este disponibilă."
+  "title": "Titlul nu este disponibil",
+  "description": "Descrierea nu este disponibilă",
+  "welcome": {
+    "title": "Bine ati venit",
+    "description": "Afișați informațiile disponibile din API-ul Wikipedia",
+    "selectLanguage": "Vă rugăm să selectați limba implicită",
+    "continue": "Continua"
+  }
 }

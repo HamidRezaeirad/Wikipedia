@@ -1,4 +1,10 @@
 {
-  "title": "Der Titel ist nicht verfügbar.",
-  "description": "Die Beschreibung ist nicht verfügbar."
+  "title": "Der Titel ist nicht verfügbar",
+  "description": "Die Beschreibung ist nicht verfügbar",
+  "welcome": {
+    "title": "Herzlich willkommen",
+    "description": "Verfügbare Informationen aus der Wikipedia-API anzeigen",
+    "selectLanguage": "Bitte Standardsprache auswählen",
+    "continue": "Fortsetzen"
+  }
 }

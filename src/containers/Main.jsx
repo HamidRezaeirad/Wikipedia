@@ -80,7 +80,7 @@ class Main extends Component {
     return (
       <div>
         {this.state.notfound ? (
-          <Redirect to="lng/notfound" />
+          <Redirect to="welcome" />
         ) : this.state.loading ? (
           <Spinner />
         ) : (

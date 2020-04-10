@@ -1,4 +1,10 @@
 {
-  "title": "Le titre ñ'est pas disponible.",
-  "description": "La description ñ'est pas disponible."
+  "title": "Le titre ñ'est pas disponible",
+  "description": "La description ñ'est pas disponible",
+  "welcome": {
+    "title": "Bienvenue",
+    "description": "Afficher les informations disponibles à partir de l'API Wikipedia",
+    "selectLanguage": "Veuillez sélectionner la langue par défaut",
+    "continue": "Continuer"
+  }
 }

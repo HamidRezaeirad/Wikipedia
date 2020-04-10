@@ -1,4 +1,10 @@
 {
-  "title": "The title is not available.",
-  "description": "The description is not available."
+  "title": "The title is not available",
+  "description": "The description is not available",
+  "welcome": {
+    "title": "Welcome",
+    "description": "Display available information from Wikipedia API",
+    "selectLanguage": "Please select default language",
+    "continue": "Continue"
+  }
 }

@@ -1,4 +1,10 @@
 {
-  "title": "Başlık mevcut değil.",
-  "description": "Açıklama mevcut değil."
+  "title": "Başlık mevcut değil",
+  "description": "Açıklama mevcut değil",
+  "welcome": {
+    "title": "Hoşgeldiniz",
+    "description": "Wikipedia API'sındaki kullanılabilir bilgileri görüntüle",
+    "selectLanguage": "Lütfen varsayılan dili seçin",
+    "continue": "Devam et"
+  }
 }
