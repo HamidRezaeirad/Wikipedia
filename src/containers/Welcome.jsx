@@ -3,9 +3,9 @@ import { withTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Dropdown } from "../components";
 import { FullLanguageOptions } from "../api/static.data";
-import "./LngNotFound.css";
+import "./Welcome.css";
 
-const LngNotFound = (props) => {
+const Welcome = (props) => {
   let newItem = {
     label: "Please select ...",
     value: "0",
@@ -20,17 +20,17 @@ const LngNotFound = (props) => {
     )[0];
     setSelectedLanguage(selectedOption);
   };
-
+  const { t } = props;
   return (
     <div className="row">
       <div className="col-12">
-        <h1>404</h1>
+        <h1>{t("welcome.title")}</h1>
       </div>
       <div className="col-12 pt-3">
-        <span>Sorry, your preferred language is not available.</span>
+        <span>{t("welcome.description")}</span>
       </div>
       <div className="col-12 pt-3">
-        <span>Please select default language.</span>
+        <span>{t("welcome.selectLanguage")}</span>
       </div>
       <div className="col-md-12 pt-4">
         <div className="divLanguages">
@@ -42,13 +42,14 @@ const LngNotFound = (props) => {
           ></Dropdown>
         </div>
       </div>
+
       <div className="col-12 pt-4 ">
         <Link to="/" className="cd-btn">
-          Continue
+          {t("welcome.continue")}
         </Link>
       </div>
     </div>
   );
 };
 
-export default withTranslation()(LngNotFound);
+export default withTranslation()(Welcome);

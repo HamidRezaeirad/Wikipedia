@@ -1,4 +1,10 @@
 {
-  "title": "Titeln är inte tillgänglig.",
-  "description": "Beskrivningen är inte tillgänglig."
+  "title": "Titeln är inte tillgänglig",
+  "description": "Beskrivningen är inte tillgänglig",
+  "welcome": {
+    "title": "Välkommen",
+    "description": "Visa tillgänglig information från Wikipedia API",
+    "selectLanguage": "Välj standardspråk",
+    "continue": "Fortsätta"
+  }
 }

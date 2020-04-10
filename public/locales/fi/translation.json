@@ -1,4 +1,10 @@
 {
-  "title": "Otsikko ei ole käytettävissä.",
-  "description": "ei kuvausta saatavilla."
+  "title": "Otsikko ei ole käytettävissä",
+  "description": "ei kuvausta saatavilla",
+  "welcome": {
+    "title": "Tervetuloa",
+    "description": "Näytä käytettävissä olevat tiedot Wikipedia API: sta",
+    "selectLanguage": "Valitse oletuskieli",
+    "continue": "Jatkaa"
+  }
 }
