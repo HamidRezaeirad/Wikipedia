@@ -61,7 +61,7 @@ Use the [Git](https://git-scm.com/downloads) to clone project in local machine.
 
 ```bash
 git init
-git clone git@gitlab.com:code-challenge1/wikipedia.git
+git clone https://github.com/HamidRezaeirad/Wikipedia.git
 cd wikipedia
 ```
 
