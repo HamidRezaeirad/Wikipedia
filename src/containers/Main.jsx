@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { withTranslation } from "react-i18next";
 import { Redirect } from "react-router-dom";
 import Profile from "./Profile";
-import { getUserProfile } from "../api/wikipedia";
 import { Spinner, Dropdown } from "../components";
-import ProfilePlaceholder from "../assests/images/Placeholder.jpg";
-import wikipedia from "../services/wikipedia";
+import { getUserProfile } from "../api/wikipedia";
+import Placeholder from "../assests/images/Placeholder.jpg";
+import service from "../services/wikipedia";
 import axiosInterceptors from "../hoc/axiosInterceptors";
 import { LanguageOptions } from "../api/static.data";
 
@@ -15,8 +15,8 @@ class Main extends Component {
     this.state = {
       data: {
         title: "The title is not available",
-        description: "The Description is not available",
-        thumbnail: { source: ProfilePlaceholder },
+        description: "The description is not available",
+        thumbnail: { source: Placeholder },
         extract: "",
       },
       loading: false,
@@ -26,12 +26,13 @@ class Main extends Component {
   }
 
   componentDidMount() {
+    this.i18n = this.props.i18n;
     this.featchData();
   }
 
   featchData = () => {
     let state = this.state;
-    let lng = this.props.i18n.language;
+    let lng = this.i18n.language;
     const languages = LanguageOptions.filter((e) => e.value === lng);
     this.setState({ ...this.state, loading: true }, () => {
       if (languages.length > 0) {
@@ -61,7 +62,7 @@ class Main extends Component {
       state.data.description = data.description || t("description");
       state.data.extract = data.extract || "";
       state.data.thumbnail.source =
-        (data.thumbnail && data.thumbnail.source) || ProfilePlaceholder;
+        (data.thumbnail && data.thumbnail.source) || Placeholder;
     } else {
       state.data.title = t("title");
       state.data.description = t("description");
@@ -70,8 +71,7 @@ class Main extends Component {
   };
 
   onDropdownChangeHandler = (event) => {
-    const { i18n } = this.props;
-    i18n.changeLanguage(event.target.value, () => {
+    this.i18n.changeLanguage(event.target.value, () => {
       this.featchData();
     });
   };
@@ -113,5 +113,5 @@ class Main extends Component {
 }
 
 export default withTranslation()(
-  axiosInterceptors(withTranslation()(Main), wikipedia)
+  axiosInterceptors(withTranslation()(Main), service)
 );

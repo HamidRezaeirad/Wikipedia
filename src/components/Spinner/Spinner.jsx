@@ -1,7 +1,7 @@
 import React from "react";
 import "./Spinner.css";
 
-const spinner = () => {
+const Spinner = () => {
   return (
     <div className="">
       <div className="d-flex justify-content-center Backdrop text-light">
@@ -17,4 +17,4 @@ const spinner = () => {
   );
 };
 
-export default spinner;
+export default Spinner;

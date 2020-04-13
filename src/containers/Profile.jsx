@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Image } from "../components";
 
-const Profile = props => {
+const Profile = (props) => {
   return (
     <>
       <div className="row">
@@ -37,6 +37,7 @@ Profile.propTypes = {
   state: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    extract: PropTypes.string.isRequired
-  })
+    thumbnail: PropTypes.object.isRequired,
+    extract: PropTypes.string.isRequired,
+  }),
 };
