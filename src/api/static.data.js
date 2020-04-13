@@ -13,12 +13,4 @@ const LanguageOptions = [
   { label: "Português", value: "br", orginal: "Portuguese" },
 ];
 
-const FullLanguageOptions = [
-  {
-    label: "Please select ...",
-    value: "0",
-  },
-  ...LanguageOptions,
-];
-
-export { LanguageOptions, FullLanguageOptions };
+export { LanguageOptions };

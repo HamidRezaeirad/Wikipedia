@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { withTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Dropdown } from "../components";
-import { FullLanguageOptions } from "../api/static.data";
+import { LanguageOptions } from "../api/static.data";
 import "./Welcome.css";
 
 const Welcome = (props) => {
@@ -15,7 +15,7 @@ const Welcome = (props) => {
 
   const onDropdownChangeHandler = ({ target }) => {
     props.i18n.changeLanguage(target.value);
-    let selectedOption = FullLanguageOptions.filter(
+    let selectedOption = LanguageOptions.filter(
       (e) => e.value === target.value
     )[0];
     setSelectedLanguage(selectedOption);
@@ -38,7 +38,7 @@ const Welcome = (props) => {
             Id="ddlLangueges"
             value={selectedLanguage.value}
             onChange={(e) => onDropdownChangeHandler(e)}
-            options={FullLanguageOptions}
+            options={LanguageOptions}
           ></Dropdown>
         </div>
       </div>
