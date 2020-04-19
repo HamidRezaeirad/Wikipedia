@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { withTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Dropdown } from "../components";
-import { LanguageOptions } from "../api/static.data";
+import LanguageOptions from "../data/languageList.json";
 import "./Welcome.css";
 
 const Welcome = (props) => {
