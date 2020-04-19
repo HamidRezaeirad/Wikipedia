@@ -7,7 +7,7 @@ import { getUserProfile } from "../api/wikipedia";
 import Placeholder from "../assests/images/Placeholder.jpg";
 import service from "../services/wikipedia";
 import axiosInterceptors from "../hoc/axiosInterceptors";
-import { LanguageOptions } from "../api/static.data";
+import LanguageOptions from "../data/languageList.json";
 
 class Main extends Component {
   constructor(props) {
