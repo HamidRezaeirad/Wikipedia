@@ -20,11 +20,11 @@ in any realistic device in any network.
   
  action query Get
 origin \* Cors
-format json JSON type
-formatversion 2 New JSON response format.
-prop pageimages|pageterms properties; what property or properies wold you want to receive
-piprop thumbnail What type of image would you receive Original or thumbnail
-titles Albert Einstein Search keyword based on title
+format JSON JSON type
+format version 2 New JSON response format.
+prop pageimages|pageterms properties; what property or properties wold you want to receive
+prop thumbnail What type of image would you receive Original or thumbnail
+titles Albert Einstein Search keyword based on the title
 pithumbsize 400 Thumbnail image size
 
 These parameters help to receive the specific data needed to be displayed on the page. Pithumbsize is a useful parameter for capturing a
@@ -39,14 +39,11 @@ create a nice and faster web page.
 
 3. **i18next**
    <br/>
-   Provide standard i18n features such as (plurals, context, interpolation, format). It provides us with a complete solution to locate
-   our product, such as web, mobile, and desktop. This framework helps us to enable the website to be multi-language, and it automatically
-   detects the default language base of the browser setting and helps developers to set user's preferred language and display the content in that
-   locale on the first load.
+   Provide standard i18n features such as (plurals, context, interpolation, format). It provides us with a complete solution to locate our product, such as web, mobile, and desktop. This framework helps us to enable the website to be multi-language, and it automatically detects the default language base of the browser setting and helps developers to set user's preferred language and display the content in that locale on the first load.
 
 4) **Bootstrap**
    <br>
-   It is useful to make the website responsive and to be able to open the web page from any realistic device. Bootstrap grid system helps me create a
+   It is useful to make the website responsive and to be able to open the web page from any realistic device. The bootstrap grid system helps me create a
    flexible web page on any device.
 
 - **Problems**
@@ -57,12 +54,12 @@ create a nice and faster web page.
 
 ## Clone
 
-Use the [Git](https://git-scm.com/downloads) to clone project in local machine.
+Use the [Git](https://git-scm.com/downloads) to clone the project in a local machine.
 
 ```bash
 git init
 git clone https://github.com/HamidRezaeirad/Wikipedia.git
-cd wikipedia
+cd Wikipedia
 ```
 
 ## Installation
@@ -75,11 +72,11 @@ npm strat
 
 ```
 
-Use the package manager [yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable) to install project.
+Use the package manager [yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable) to install the project.
 
 ```bash
 yarn install
-yarn strat
+yarn start
 
 ```
 
@@ -89,7 +86,7 @@ Web application will be run in local machin on post 3000.
 <br/>
 [http://localhost:3000/](http://localhost:3000/)
 
-Also application has been deployed on AWS Amplify and is accessibale with below link:
+Also, the application has been deployed on AWS Amplify and is accessible with below link:
 <br/>
 [https://master.d1xd8to6aicror.amplifyapp.com/](https://master.d1xd8to6aicror.amplifyapp.com/)
 
