@@ -54,7 +54,7 @@ create a nice and faster web page.
 
 ## Clone
 
-Use the [Git](https://git-scm.com/downloads) to clone the project in a local machine.
+Use [Git](https://git-scm.com/downloads) to clone the project in a local machine.
 
 ```bash
 git init
@@ -68,7 +68,7 @@ Use the package manager [npm](https://docs.npmjs.com/cli/install) to install pro
 
 ```bash
 npm install
-npm strat
+npm start
 
 ```
 
@@ -82,7 +82,7 @@ yarn start
 
 ## Accessibly
 
-Web application will be run in local machin on post 3000.
+Web application will be run in local machine on post 3000.
 <br/>
 [http://localhost:3000/](http://localhost:3000/)
 
